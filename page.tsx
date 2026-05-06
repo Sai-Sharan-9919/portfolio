@@ -9,11 +9,29 @@ export default function Home() {
         </h1>
 
         <ul className="hidden md:flex gap-8 text-lg">
-          <li className="hover:text-purple-400 cursor-pointer">Home</li>
-          <li className="hover:text-purple-400 cursor-pointer">About</li>
-          <li className="hover:text-purple-400 cursor-pointer">Skills</li>
-          <li className="hover:text-purple-400 cursor-pointer">Projects</li>
-          <li className="hover:text-purple-400 cursor-pointer">Contact</li>
+          <li>
+  <a href="#home" className="hover:text-purple-400">
+    Home
+  </a>
+</li>
+
+<li>
+  <a href="#about" className="hover:text-purple-400">
+    About
+  </a>
+</li>
+
+<li>
+  <a href="#projects" className="hover:text-purple-400">
+    Projects
+  </a>
+</li>
+
+<li>
+  <a href="#contact" className="hover:text-purple-400">
+    Contact
+  </a>
+</li>
         </ul>
       </nav>
 
@@ -56,9 +74,10 @@ export default function Home() {
         </div>
 
       </section>
-
-      {/* About Section */}
-      <section className="px-10 py-24 bg-gray-950">
+      <section
+  id="home"
+  className="h-screen flex flex-col justify-center items-center text-center px-6"
+>
 
         <h2 className="text-5xl font-bold text-center mb-14">
           About Me
@@ -82,7 +101,10 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className="px-10 py-24">
+      <section
+  id="about"
+  className="px-10 py-24 bg-gray-950"
+>
 
         <h2 className="text-5xl font-bold text-center mb-16">
           Technical Skills
@@ -127,7 +149,10 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section className="px-10 py-24 bg-gray-950">
+<section
+  id="projects"
+  className="px-10 py-24 bg-gray-950"
+>
 
         <h2 className="text-5xl font-bold text-center mb-16">
           Projects
@@ -228,7 +253,10 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="px-10 py-24 bg-gray-950">
+<section
+  id="contact"
+  className="px-10 py-24 bg-gray-950"
+>
 
         <h2 className="text-5xl font-bold text-center mb-16">
           Contact Me
